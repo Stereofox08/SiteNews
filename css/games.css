@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+::-webkit-scrollbar{
+    width: 3px;
+    background-color: white;
+
+}
+::-webkit-scrollbar-thumb{
+    width: 3px;
+    background-color: black;
+
+}
+.main{
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main_block{
+    width: 50%;
+    height: 94vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.main_block-header{
+    font-size: 30pt;
+    font-family: SportWorld;
+}
+.main_block-category{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.main_block-category__item{
+    font-family: Victor;
+    width: fit-content;
+    padding: 5px 15px;
+    height: 20px;
+    background-color: rgb(182, 182, 182);
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.main_block-category__item:hover{
+    background-color: rgb(233, 233, 233);
+
+}
+.main_block-news{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+}
+
+.news_item-block{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+
+}
+.news_item-img img{
+height: 150px;
+border-radius: 24px;
+}
+.news_item-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main_block-news__item{ 
+    font-family: Victor;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 3px solid black;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.main_block-news__item:hover{
+    transform: scale(1.02);
+}
+.news_item-info{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.news_item-header{
+    font-size: 20pt;
+}
+.news_item-category{
+    color: rgb(78, 78, 78);
+}
+.news_item-info{
+    color: rgb(39, 39, 39);
+}
+.logo{
+    font-size: 60pt;
+    font-family: SportWorld;
+}
+span{
+    color:red
+}
+.news_item-header a{
+    color:black
+}

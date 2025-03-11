@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: SportWorld;
+    src: url(../assets/font/SportsWorld.otf);
+}
+.block{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: SportWorld;
+}
+span{
+    color: red
+}
+.name{
+    font-size: 80pt;
+}
+a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 70px;
+    border: 3px solid #15CEA3;
+    color: #15CEA3;
+    border-radius: 12px;
+    font-size: 18pt;
+    text-decoration: none;
+}
+.text{
+    font-size: 30pt;
+}
+.block_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    height: 30%;
+}

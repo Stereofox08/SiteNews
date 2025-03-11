@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>ҮЛКЕН ЖАНАЛЫКТАР</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header_burgermenu">
+            <img class="burger-menu_open" src="assets/png/Hamburger.png" alt="Burger-menu" onclick="BurgerOpen()">
+            <div class="burger-menu_close" onclick="BurgerClose()">
+                X
+            </div>
+        </div>
+        <div class="header_menu">
+            <div class="header_menu-category" style="border-bottom: 3px solid red;"><a href="index_kz.html">Сонгы</a></div>
+            <div class="header_menu-category"><a href="404.html">САЯСАТ</a></div>
+            <div class="header_menu-category"><a href="games.html">ОЙЫНДАР</a></div>
+            <div class="header_menu-category"><a href="404.html">ӘЛЕМ</a></div>
+            <div class="header_menu-category"><a href="404.html">СПОРТ</a></div>   
+        </div>
+        <div class="header_right">
+            <div class="header_right-language">
+                <label for="Language">
+                    <select name="Language" id="languageSelect" onchange="changeLanguage(this)">
+                        <option value="KZ">KZ</option>
+                        <option value="RU">RU</option>
+                        <option value="EN">EN</option>
+                    </select>
+                </label>
+            </div>
+            <div class="header_right-search">
+                <input class="search-text" type="text" onclick="SearchOFF()" placeholder="Іздеу үшін Enter басыныз">
+            </div>
+            <a href="login.html"><div class="header_right-autorize">Кіру</div></a>
+        </div>
+    </header>
+    <div class="burger-menu">
+        <div class="burger-menu_block">
+            <div class="burger-menu_name" id="onename">САЯСАТ</div>
+            <div class="burger-menu_block-category">
+                <div class="burger-menu_category"><a href="404.html">Аналитика</a></div>
+                <div class="burger-menu_category"><a href="404.html">Сайлау</a></div>
+                <div class="burger-menu_category"><a href="404.html">Зандар</a></div>
+                <div class="burger-menu_category"><a href="404.html">Сухбат</a></div>
+            </div>
+        </div>
+        <div class="burger-menu_block">
+            <div class="burger-menu_name" id="twoname">ОЙЫНДАР</div>
+            <div class="burger-menu_block-category">
+                <div class="burger-menu_category"><a href="404.html">Шолулар</a></div>
+                <div class="burger-menu_category"><a href="404.html">Киберспорт</a></div>
+                <div class="burger-menu_category"><a href="404.html">Жана ойындар</a></div>
+                <div class="burger-menu_category"><a href="404.html">Гидтер</a></div>
+            </div>
+        </div>
+        <div class="burger-menu_block">
+            <div class="burger-menu_name" id="threename">СПОРТ</div>
+            <div class="burger-menu_block-category">
+                <div class="burger-menu_category"><a href="404.html">Футбол</a></div>
+                <div class="burger-menu_category"><a href="404.html">Баскетбол</a></div>
+                <div class="burger-menu_category"><a href="404.html">Волейбол</a></div>
+                <div class="burger-menu_category"><a href="404.html">Бокс</a></div>
+            </div>
+        </div>
+        <div class="burger-menu_block">
+            <div class="burger-menu_name" id="fourname">ӘЛЕМ</div>
+            <div class="burger-menu_block-category">
+                <div class="burger-menu_category"><a href="404.html">Мәдениет</a></div>
+                <div class="burger-menu_category"><a href="404.html">Жаналыктар</a></div>
+                <div class="burger-menu_category"><a href="#">Апаттар</a></div>
+            </div>
+        </div>
+    </div>
+    <main class="main">
+        <div class="main_block">
+            <div class="main_block-news">
+                <div class="main_block-news__big">
+                    <div class="news_big-name"><a href="404.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut nesciunt distinctio iure suscipit quaerat consectetur quidem enim. Fugiat, consectetur ipsam?</a></div>
+                    <div class="news_big-info">
+                        <div class="news_big-date">Кеше, 04:20</div>
+                        <div class="news_big-visitor">Каралды: 121</div>
+                    </div>
+                </div>
+                <div class="main_small-block">
+                    <div class="main_block-news__small">
+                        <div class="news_small-img"><img src="assets/png/News2.jpg" alt=""></div>
+                        <div class="news_small-name"><a href="404.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, quia?</a></div>
+                        <div class="news_small-info">
+                            <div class="news_small-date">Кеше, 04:20</div>
+                            <div class="news_small-visitor">Каралды: 121</div>
+                        </div>
+                    </div>
+                    <div class="main_block-news__small">
+                        <div class="news_small-img"><img src="assets/png/News1.webp" alt=""></div>
+                        <div class="news_small-name"><a href="404.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, quia?</a></div>
+                        <div class="news_small-info">
+                            <div class="news_small-date">Кеше, 04:20</div>
+                            <div class="news_small-visitor">Каралды: 121</div>
+                        </div>
+                    </div>
+                    <div class="main_block-news__small">
+                        <div class="news_small-img"><img src="assets/png/News4.jpg" alt=""></div>
+                        <div class="news_small-name"><a href="404.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, quia?</a></div>
+                        <div class="news_small-info">
+                            <div class="news_small-date">Кеше, 04:20</div>
+                            <div class="news_small-visitor">Каралды: 121</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main_block-news">
+                <div class="right_news-name">Танымал</div>
+                <div class="right_news-block">
+                    <div class="news_block-name"><a href="404.html">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, officia?</a></div>
+                    <div class="news_block_info">
+                        <div class="news_block-date">Кеше, 04:20</div>
+                        <div class="news_block-visitor">Каралды: 121</div>
+                    </div>
+                </div>
+                <div class="right_news-block">
+                    <div class="news_block-name"><a href="404.html">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, officia?</a></div>
+                    <div class="news_block_info">
+                        <div class="news_block-date">Кеше, 04:20</div>
+                        <div class="news_block-visitor">Каралды: 121</div>
+                    </div>
+                </div>
+                <div class="right_news-block">
+                    <div class="news_block-name"><a href="404.html">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, officia?</a></div>
+                    <div class="news_block_info">
+                        <div class="news_block-date">Кеше, 04:20</div>
+                        <div class="news_block-visitor">Каралды: 121</div>
+                    </div>
+                </div>
+                <div class="right_news-block">
+                    <div class="news_block-name"><a href="404.html">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, officia?</a></div>
+                    <div class="news_block_info">
+                        <div class="news_block-date">Кеше, 04:20</div>
+                        <div class="news_block-visitor">Каралды: 121</div>
+                    </div>
+                </div>
+                <div class="right_news-block">
+                    <div class="news_block-name"><a href="404.html">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, officia?</a></div>
+                    <div class="news_block_info">
+                        <div class="news_block-date">Кеше, 04:20</div>
+                        <div class="news_block-visitor">Каралды: 121</div>
+                    </div>
+                </div>
+                <div class="right_news-block">
+                    <div class="news_block-name"><a href="404.html">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, officia?</a></div>
+                    <div class="news_block_info">
+                        <div class="news_block-date">Кеше, 04:20</div>
+                        <div class="news_block-visitor">Каралды: 121</div>
+                    </div>
+                </div>
+                <div class="right_news-block">
+                    <div class="news_block-name"><a href="404.html">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, officia?</a></div>
+                    <div class="news_block_info">
+                        <div class="news_block-date">Кеше, 04:20</div>
+                        <div class="news_block-visitor">Каралды: 121</div>
+                    </div>
+                </div>
+                <div class="right_news-block">
+                    <div class="news_block-name"><a href="404.html">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, officia?</a></div>
+                    <div class="news_block_info">
+                        <div class="news_block-date">Кеше, 04:20</div>
+                        <div class="news_block-visitor">Каралды: 121</div>
+                    </div>
+                </div>
+                <div class="right_news-block">
+                    <div class="news_block-name"><a href="404.html">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, officia?</a></div>
+                    <div class="news_block_info">
+                        <div class="news_block-date">Кеше, 04:20</div>
+                        <div class="news_block-visitor">Каралды: 121</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
